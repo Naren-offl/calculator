@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="header">Calculator</p>
+    <p class="ans"></p>
+    <table>
+        <tr>
+            <td><button onclick="number(1)">1</button></td>
+            <td><button onclick="number(2)">2</button></td>
+            <td><button onclick="number(3)">3</button></td>
+            <td><button onclick="number(' + ')" class="orange">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number(4)">4</button></td>
+            <td><button onclick="number(5)">5</button></td>
+            <td><button onclick="number(6)">6</button></td>
+            <td><button onclick="number(' - ')" class="orange">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number(7)">7</button></td>
+            <td><button onclick="number(8)">8</button></td>
+            <td><button onclick="number(9)">9</button></td>
+            <td><button onclick="number(' * ')" class="orange">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number(0)">0</button></td>
+            <td><button onclick="number('.')">.</button></td>
+            <td><button onclick="remove()">⌫</button></td>
+            <td><button onclick="number(' / ')" class="orange">/</button></td>
+        </tr>
+    </table>
+    <button onclick="clearScreen()" class="orange">Clear</button>
+    <button onclick="number(' ** ')" class="orange">^</button>
+    <button onclick="ans()" class="equal">=</button>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
